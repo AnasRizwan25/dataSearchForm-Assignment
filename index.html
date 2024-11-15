@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./styles/style-2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap"rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style-1.css">
+  <link rel="shortcut icon" href="./images/form-pic.png" type="image/x-icon">
+  <title>Search Data Form</title>
+</head>
+
+<body>
+
+  <div class="modalPtn">
+    <div class="modal">
+      <h1 id="h1">Found The Student Data</h1>
+      <button onclick="closeModal();"><img width="26" src="./images/close.png"></button>
+      <div class="divInside"></div>
+    </div>
+  </div>
+
+
+  <main>
+    <div class="form-div">
+      <h1>Student Data Search </h1>
+
+      <form>
+        <div>
+          <p>Email</p>
+          <div class="input-div">
+            <img width="16" src="./images/mail-pic.png">
+            <input class="em" type="email" placeholder="Type your email" oninput="ontyping('email',event)">
+          </div>
+          <span id="email-id">Invalid email</span>
+        </div>
+        <div>
+          <p>Username</p>
+          <div class="input-div">
+            <img width="19" src="./images/personPic.png">
+            <input class="us" type="text" placeholder="Type your username" oninput="ontyping('username',event)">
+          </div>
+          <span id="user-id">Atleast 6 digit username</span>
+        </div>
+        <div>
+          <p>Student ID</p>
+          <div class="input-div">
+            <img width="16" src="./images/passPIc.png">
+            <input class="id" type="text" placeholder="Type your student ID" oninput="ontyping('id',event)">
+          </div>
+          <span id="ids-id">Atleast 6 digit ID</span>
+        </div>
+        <div>
+          <p>Gender</p>
+          <div class="input-div">
+            <img width="16" src="./images/gender-pic.png">
+            <input class="gen" type="text" placeholder="Enter your Gender" oninput="ontyping('gender',event)">
+          </div>
+          <span id="gender-id">Enter the right gender</span>
+        </div>
+        <input class="btn" type="submit" onclick="onform(event);">
+      </form>
+
+
+
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
