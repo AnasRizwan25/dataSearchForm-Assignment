@@ -63,7 +63,6 @@ const usersData = [
 
 let data = [];
 
-
 function ontyping(value, e) {
   let emailId = document.querySelector('#email-id');
   let userId = document.querySelector('#user-id');
@@ -114,8 +113,6 @@ function ontyping(value, e) {
       gender.style.display = 'block';
     }
   }
-
-
 }
 
 
@@ -129,8 +126,6 @@ function onform(e) {
   let gender = document.querySelector('.gen');
   let h1 = document.querySelector('#h1');
 
-  
-  
   for (let i = 0; i < usersData.length; i++) {
     if (usersData[i].username === username.value && usersData[i].id === id.value && usersData[i].gender === gender.value && usersData[i].email === email.value) {
       openModal();
@@ -145,9 +140,6 @@ function onform(e) {
     h1.style.display = 'none';
     notFound();
   }
-  
-
-
 }
 
 function closeModal() {
@@ -171,7 +163,6 @@ function notFound(){
 function modal(username, email, id, gender) {
 
   let html = '';
-
   let divInside = document.querySelector('.divInside');
 
   html =
@@ -193,5 +184,4 @@ function modal(username, email, id, gender) {
   `;
 
   divInside.innerHTML = html;
-
 }

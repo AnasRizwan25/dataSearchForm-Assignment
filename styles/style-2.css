@@ -8,12 +8,13 @@
   display: none;
 }
 .modal{
-  width: 590px;
-  height: 530px;
+  width: 580px;
+  height: 550px;
   border-radius: 20px;
   background-color: white;
   position: relative;
-  background-color: rgb(255, 255, 195);
+  background-color: rgb(252, 252, 204);
+  font-size: 40px;
 }
 .modal button{
   position: absolute;
@@ -45,8 +46,9 @@ th{
 }
 @media (min-width: 320px) and (max-width:600px) {
   .modal{
-    width: 320px;
-    height: 530px;
+    width: 310px;
+    height: 580px;
+    font-size: 30px;
   }
   table,tr,td,th{
     font-size: 10px;
